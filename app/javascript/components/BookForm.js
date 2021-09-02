@@ -1,22 +1,21 @@
 import React, {useState} from "react";
 
 const BookForm = (props) =>{
-  const [title, setTitle] = useState(props.title ? props.title : "")
-  const [author, setAuthor] = useState(props.author ? props.author : "")
+  const [title, setTitle] = useState(props.title ? props.title : "");
+  const [author, setAuthor] = useState(props.author ? props.author : "");
   
   const handleSubmit = (e) => {
     e.preventDefault();
     if (props.id) {
-      props.updateBook({id: props.id, title, author})
-    }
-    else {
-      props.addBookProps({title, author})
-    }
+      props.updateBook({id: props.id, title, author});
+    } else {
+      props.addBookProps({title, author});
+    };
     if (!props.error) {
       setTitle("");
       setAuthor("");
-    }
-  }
+    };
+  };
 
   return(
     <div>
