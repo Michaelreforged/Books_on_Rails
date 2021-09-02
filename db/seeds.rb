@@ -8,7 +8,7 @@
 
 Book.destroy_all
 
-b1 = Book.create(title:"Harry Pottor", author: "JK")
+b1 = Book.create(title:"Wizard School", author: "JK")
 b2 = Book.create(title:"Ring to Volcano", author: "JR")
 b3 = Book.create(title:"Rabbit is Late", author: "LC")
 
