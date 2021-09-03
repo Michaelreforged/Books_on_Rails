@@ -5,6 +5,8 @@ import BookForm from "./BookForm"
 
 const app = () => {
   const [books,setBooks] = useState([]);
+  const [showForm, setShowForm] = useState(false);
+
 
   const getBooks = async () => {
     try{
@@ -51,7 +53,8 @@ const app = () => {
   return(
     <div>
       <h1>Book App</h1>
-      <BookForm addBookProps={addBook} />
+      <button onClick={() => setShowForm(!showForm)}>{showForm ? "Cancel Book Creation" : "New Book" }</button>
+      {showForm && <BookForm addBookProps={addBook} />}
       <Books books = {books} getBooks={getBooks} updateBook={updateBook} deleteBook={deleteBook}/>
     </div>
   )

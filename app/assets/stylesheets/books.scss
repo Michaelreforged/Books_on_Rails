@@ -1,3 +1,15 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: lightslategrey;
+}
+
+form {
+  background-color: lightsteelblue;
+}
+h1, h3, p {
+  max-width: max-content;
+  background-color: mediumaquamarine;
+}

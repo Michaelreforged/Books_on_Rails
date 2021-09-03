@@ -18,7 +18,7 @@ const BookForm = (props) =>{
   };
 
   return(
-    <div>
+    <div style={{margin:"10px", border:"5px solid dimgrey"}}>
       <h1>Books Form</h1>
       <form onSubmit={handleSubmit}>
         <p>Title</p>
